@@ -1,6 +1,10 @@
 # Use Node.js 16 slim as the base image
 FROM node:16-slim
 
+# Enable BuildKit syntax
+syntax=docker/dockerfile:1.3
+
+
 # Set the working directory
 WORKDIR /app
 
